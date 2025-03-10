@@ -1,0 +1,498 @@
+/* Background Blue */
+body {
+    background-color: #3A6EA5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Typing Animation */
+.typing-animation {
+    position: relative;
+    left: 6%;
+    font-size: 38px;
+    font-weight: 100;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid;
+    width: 0;
+    animation: typing 4s steps(30) forwards,
+        blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 55%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+/* Loading Page */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Styling Botons */
+.Navegation_Botons {
+    position: absolute;
+    left: 92%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Navegation_Botons li {
+    list-style-type: none;
+    background-color: #D3D3D3;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 0;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.Navegation_Botons li:hover {
+    background-color: #D3D3D3;
+    transform: scale(1.1);
+    transition: transform 0.5s ease, background-color 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.Navegation_Botons img {
+    width: 25px;
+    height: auto;
+}
+
+/* Styling Background Hover */
+.Navegation_Botons {
+    position: absolute;
+    left: 85%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Navegation_Botons li {
+    position: relative;
+    list-style-type: none;
+    background-color: #D3D3D3;
+    border-radius: 35px;
+    width: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 45px 0;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    padding-right: 15px;
+    overflow: hidden;
+}
+
+.Navegation_Botons li::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    right: 70px;
+    color: #333;
+    font-family: Coda;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    padding-left: 20px;
+}
+
+.Navegation_Botons li:hover {
+    width: 150px;
+    transform: scale(1.1);
+    background-color: #D3D3D3;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.Navegation_Botons li:hover::before {
+    opacity: 1;
+}
+
+/* Styling tittle */
+.tittle {
+    position: relative;
+    left: 38%;
+    margin-top: 2%;
+    width: 40%;
+    font-size: 90px;
+    font-family: Fjalla One;
+    color: #EBEBEB;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.tittle .highlight {
+    color: burlywood;
+}
+
+/* Styling Personal Data */
+.Personal_info {
+    /* background-color:brown; */
+    width: 60%;
+    display: flex;
+}
+
+.tittle_Personal_info {
+    position: relative;
+    left: 12%;
+    color: #EBEBEB;
+    font-family: Fjalla One;
+    font-size: 40px;
+}
+
+.data1 {
+    position: absolute;
+    gap: 10px;
+    left: 4%;
+    top: 38%;
+    width: 60%;
+    list-style-type: none;
+    /* background-color: #333; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info_1 {
+    color: #EBEBEB;
+    font-family: Fjalla One;
+    font-size: 30px;
+    opacity: 0.8;
+    margin: 3%;
+}
+
+.info_1-1 {
+    color: burlywood;
+    font-family: Fjalla One;
+    font-size: 25px;
+    display: inline;
+}
+
+/* Styling Download Button */
+.btn_download {
+    position: absolute;
+    right: 35%;
+    top: 32%;
+    background-color: transparent;
+    border: none;
+    font-family: Fjalla One;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.download_button {
+    position: absolute;
+    left: 7%;
+    top: 85%;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: Fjalla One;
+    background-color: #5796d9;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    box-shadow: 11px 11px 11px 11px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.icon_download {
+    position: relative;
+    left: 41%;
+    top: 8px;
+    width: 15%;
+}
+
+.download_button:hover {
+    background-color: burlywood;
+    border-color: transparent;
+    transform: scale(1.1);
+}
+
+.download_button a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Styling My Skills */
+.My_Skills {
+    position: relative;
+    top: 90px;
+}
+
+.tittle_Skills {
+    color: white;
+    font-family: Fjalla One;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30%;
+}
+
+.skill-item {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    position: relative;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.skill-item h2 {
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: burlywood;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 28px;
+    margin: 0 0 8px 0;
+}
+
+.progress-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    clip: rect(0px, 200px, 200px, 100px);
+    background: transparent;
+    border: 10px solid burlywood;
+    box-sizing: border-box;
+    transform: rotate(0deg);
+    opacity: 0;
+    animation: fill-progress 2s ease-in-out forwards;
+}
+
+.progress-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.skill-item h2 {
+    color: burlywood;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 28px;
+    margin: 0 0 8px 0;
+}
+
+.percentage {
+    color: #EBEBEB;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+    display: block;
+}
+
+/* Animation for every skill level */
+[data-percent="90"] .progress-bar {
+    animation: fill-90 2s ease-in-out forwards;
+}
+
+[data-percent="85"] .progress-bar {
+    animation: fill-85 2s ease-in-out forwards;
+}
+
+[data-percent="75"] .progress-bar {
+    animation: fill-75 2s ease-in-out forwards;
+}
+
+[data-percent="80"] .progress-bar {
+    animation: fill-80 2s ease-in-out forwards;
+}
+
+@keyframes fill-90 {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(324deg);
+        opacity: 1;
+    }
+}
+
+@keyframes fill-85 {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(306deg);
+        opacity: 1;
+    }
+}
+
+@keyframes fill-80 {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(288deg);
+        opacity: 1;
+    }
+}
+
+@keyframes fill-75 {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(270deg);
+        opacity: 1;
+    }
+}
+
+/* Skill Container */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    justify-items: center;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 30px;
+}
+
+/* Styling Section Expertience */
+.tittle_Experience {
+    color: white;
+    font-family: Fjalla One;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10%;
+    margin: 10%;
+}
+
+.Experience {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.timeline-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.timeline-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 25px;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.timeline-item .date {
+    color: burlywood;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.timeline-item h3 {
+    color: #EBEBEB;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.timeline-item span {
+    color: burlywood;
+    font-size: 20px;
+}
+
+.timeline-item p {
+    color: #EBEBEB;
+    font-family: 'Coda', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.icon {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: burlywood;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon img {
+    width: 20px;
+}

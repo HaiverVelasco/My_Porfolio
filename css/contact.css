@@ -1,0 +1,381 @@
+/* Background Blue */
+body {
+    background-color: #3A6EA5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Typing Animation */
+.typing-animation {
+    position: relative;
+    left: 6%;
+    font-size: 38px;
+    font-weight: 100;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid;
+    width: 0;
+    animation: typing 4s steps(30) forwards,
+        blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 55%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+/* Loading Page */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Styling Botons */
+.Navegation_Botons {
+    position: absolute;
+    left: 92%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Navegation_Botons li {
+    list-style-type: none;
+    background-color: #D3D3D3;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 0;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.Navegation_Botons li:hover {
+    background-color: #D3D3D3;
+    transform: scale(1.1);
+    transition: transform 0.5s ease, background-color 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.Navegation_Botons img {
+    width: 25px;
+    height: auto;
+}
+
+/* Styling Background Hover */
+.Navegation_Botons {
+    position: absolute;
+    left: 85%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Navegation_Botons li {
+    position: relative;
+    list-style-type: none;
+    background-color: #D3D3D3;
+    border-radius: 35px;
+    width: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 45px 0;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    padding-right: 15px;
+    overflow: hidden;
+}
+
+.Navegation_Botons li::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    right: 70px;
+    color: #333;
+    font-family: Coda;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    padding-left: 20px;
+}
+
+.Navegation_Botons li:hover {
+    width: 150px;
+    transform: scale(1.1);
+    background-color: #D3D3D3;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.Navegation_Botons li:hover::before {
+    opacity: 1;
+}
+
+/* Styling tittle */
+.tittle {
+    position: relative;
+    left: 38%;
+    margin-top: 2%;
+    width: 40%;
+    font-size: 90px;
+    font-family: Fjalla One;
+    color: #EBEBEB;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.tittle .highlight {
+    color: burlywood;
+}
+
+.Text_Data {
+    font-family:Oswald;
+    font-size: 20px;
+    color: #EBEBEB;
+    width: 22%;
+    margin-left: 3%;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    animation: slideIn 1s ease-out;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(-50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+}
+
+/* Styling Personal Data */
+.Info_Data {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    width: 25%;
+    margin-left: 40px;
+}
+
+.Data {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.img {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.img img {
+    width: 50px;
+    height: 50px;
+}
+
+.Data .tittle_1 {
+    font-family: 'Fjalla One', sans-serif;
+    color: burlywood;
+    font-size: 24px;
+    margin: 0;
+}
+
+.Data .tittle_2,
+.Data .tittle_3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #EBEBEB;
+    margin: 5px 0;
+}
+
+.Data .tittle_2 {
+    font-size: 18px;
+}
+
+.Data .tittle_3 {
+    font-size: 16px;
+}
+
+.Contact_Data{
+    margin-top: -4%;
+}
+
+/* Styling Inputs */
+.Inputs_Contact {
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    width: 50%;
+}
+
+.Input1 {
+    display: inline;
+    background-color: #333;
+    outline: none;
+    border-color: transparent;
+    border: 2px solid transparent;
+    padding: 30px;
+    width: 40%;
+    color: #EBEBEB;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input:hover {
+    border-color: burlywood;
+}
+
+textarea {
+    display: block;
+    padding: 30px 50px;
+    background-color: #333;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 50px;
+    color: #EBEBEB;
+    font-size: 20px;
+    margin: 15px 0;
+    width: 83%;
+    min-height: 150px;
+    max-height: 300px;
+    overflow: auto;
+    transition: all 0.3s ease;
+    resize: vertical;
+    font-family: 'Open Sans', sans-serif;
+}
+
+textarea:hover {
+    border-color: burlywood;
+}
+
+textarea:focus {
+    border-color: burlywood;
+    box-shadow: 0 0 10px rgba(222, 184, 135, 0.3);
+}
+
+textarea::-webkit-scrollbar {
+    width: 18px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 8px;
+    margin: 30px 0 30px -10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+    border: 3px solid #333;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+/* Styling  */
+.Send_Message {
+    background-color: burlywood;
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.Send_Message span {
+    display: none;
+}
+
+.Send_Message:hover {
+    width: 200px;
+    border-radius: 30px;
+    background-color: #d2a679;
+}
+
+.Send_Message:hover span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.Send_Message img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+.Send_Message:hover img {
+    transform: translateY(2px);
+}
+
+/* Styling Social Media Buttons */
+.Social_Media_Botons {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.Social_Media_Botons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #EBEBEB;
+    padding: 5px;
+}
+
+.Social_Media_Botons:hover img {
+    background-color: burlywood;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+

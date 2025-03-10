@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <link rel="icon" href="../img/portfolio.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Fjalla+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="../Js/Portfolio.js"></script>
+</head>
+<body>
+    <!-- Start Section Botons -->
+    <h1 class="tittle">MY <span class="highlight">PORTFOLIO</span></h1>
+
+    <section class="Navegation_Botons">
+        <ul>
+            <a href="../html/index.html"><li data-tooltip="Home"><img src="../img/home.png" alt="Btn home"></li></a>
+            <a href="../html/about.html"><li data-tooltip="About Me"><img src="../img/about.png" alt="Btn about"></li></a>
+            <a href="../html/Portfolio.html"><li data-tooltip="Portfolio"><img src="../img/portfolio.png" alt="Bton portfolio"></li></a>
+            <a href="../html/contact.html"><li data-tooltip="Contact"><img src="../img/contact.png" alt="Btn contact"></li></a>
+        </ul>
+    </section>
+    <!-- End Section Botons -->
+
+    <!-- Start Section Projects -->
+    <section class="Proyects_Portfolio">
+
+        <!-- First Card - WOOPERLAND -->
+        <div class="card">
+            <img src="../img/wooper_modal.png" alt="Project Image" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">WOOPERLAND</h2>
+                <p class="card-description">Project with service-oriented architecture, children's game.</p>
+                <p class="disclaimer"> ( Project without Deployment )</p>
+                <button class="card-link" onclick="openModal('modal1')">View Project</button>
+            </div>
+        </div>
+        
+<!-- Third Card - AGROVIDA APP -->
+        <div class="card">
+            <img src="../img/woper_app.png" alt="Project Image" class="card-img3">
+            <div class="card-content">
+                <h2 class="card-title">WOOPERLAND-APP</h2>
+                <p class="card-description"> Project with service-oriented architecture, children's game. </p>
+                <p class="disclaimer"> ( Project without Deployment )</p>
+                <button class="card-link" onclick="openModal('modal3')">View Project</button>
+            </div>
+        </div>
+
+        <!-- Second Card - AGROVIDA -->
+        <div class="card">
+            <img src="../img/agrovida_modaL1.png" alt="Project Image" class="card-img2">
+            <div class="card-content">
+                <h2 class="card-title">AGROVIDA</h2>
+                <p class="card-description"> Agricultural automation project for SENA, managing crops. </p>
+                <p class="disclaimer"> ( Project without Deployment )</p>
+                <button class="card-link" onclick="openModal('modal2')">View Project</button>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Section Projects -->
+    
+    <!-- Start Modal WOOPERLAND -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>WOOPERLAND</h2>
+
+            <div class="modal__details">
+                <div class="detail-item">
+                    <img src="../img/proyect.png" alt="Icon_Proyect">
+                    <i class="fa fa-file-text-o">Project:</i> <span>Website</span>
+                </div>
+                <div class="detail-item">
+                    <img src="../img/client.png" alt="Icon_Client">
+                    <i class="fa fa-user-o">Client:</i> <span>SENA</span>
+                </div>
+                <div class="detail-item">
+                    <img src="../img/code.png" alt="Icon_Language">
+                    <i class="fa fa-code">Language:</i> <span>HTML, CSS, Javascript, PHP</span>
+                </div>
+                <div class="detail-item">
+                    <img src="../img/redirect.png" alt="Icon_Repo">
+                    <i class="fa fa-external-link">Repository:</i> <a class="preview-link"  href="https://github.com/StivenChamorro/frontend.git">Wooperland</a>
+                </div>
+            </div>
+            
+            <section class="Show_Proyect">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="../img/IMG_PREVIEW1.png" alt="IMG1" class="Carrusel_Preview">
+                        <img src="../img/IMG_PREVIEW2.png" alt="IMG2" class="Carrusel_Preview">
+                        <img src="../img/IMG_PREVIEW3.png" alt="IMG3" class="Carrusel_Preview">
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <!-- End Modal WOOPERLAND -->
+
+    <!-- Start Modal AGROVIDA -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>AGROVIDA</h2>
+
+            <div class="modal__details">
+                <div class="detail-item">
+                    <img src="../img/proyect.png" alt="Icon_Proyect">
+                    <i class="fa fa-file-text-o">Project:</i> <span>Website</span>
+                </div>
+                <div class="detail-item">
+                    <img src="../img/client.png" alt="Icon_Client">
+                    <i class="fa fa-user-o">Client:</i> <span>SENA</span>
+                </div>
+                <div class="detail-item">
+                    <img src="../img/code.png" alt="Icon_Language">
+                    <i class="fa fa-code">Language:</i> <span>HTML, CSS, Javascript, PHP</span>
+                </div>
+                <div class="detail-item">
+                    <img src="../img/redirect.png" alt="Icon_Repo">
+                    <i class="fa fa-external-link">Repository:</i> <a class="preview-link" href="https://github.com/sebas313313313/sena-autonona-v10.git">Agrovida</a>
+                </div>
+            </div>
+
+            <section class="Show_Proyect">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="../img/IMG_PREVIEW4.png" alt="IMG1" class="Carrusel_Preview2">
+                        <img src="../img/IMG_PREVIEW5.png" alt="IMG2" class="Carrusel_Preview2">
+                        <img src="../img/IMG_PREVIEW6.png" alt="IMG3" class="Carrusel_Preview2">
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <!-- End Modal AGROVIDA -->
+
+    <!-- Start Modal AGROVIDA-APP -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>AGROVIDA</h2>
+
+            <div class="modal__details">
+                <div class="detail-item">
+                    <img src="../img/proyect.png" alt="Icon_Proyect">
+                    <i class="fa fa-file-text-o">Project:</i> <span>App-Mobile</span>
+                </div>
+                <div class="detail-item">
+                    <img src="../img/client.png" alt="Icon_Client">
+                    <i class="fa fa-user-o">Client:</i> <span>SENA</span>
+                </div>
+                <div class="detail-item">
+                    <img src="../img/code.png" alt="Icon_Language">
+                    <i class="fa fa-code">Language:</i> <span>Kotlin, Jecpack Compose</span>
+                </div>
+                <div class="detail-item">
+                    <img src="../img/redirect.png" alt="Icon_Repo">
+                    <i class="fa fa-external-link">Repository:</i> <a class="preview-link" href="https://github.com/StivenChamorro/wooperland_enserio_movil.git">Wooperland-App</a>
+                </div>
+            </div>
+
+            <section class="Show_Proyect">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="../img/IMG_PREVIEW7.png" alt="IMG1" class="Carrusel_Preview3">
+                        <img src="../img/IMG_PREVIEW8.png" alt="IMG2" class="Carrusel_Preview3">
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <!-- End Modal AGROVIDA-APP -->
+</body>
+</html>
